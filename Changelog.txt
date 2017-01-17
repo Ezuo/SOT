@@ -3,6 +3,7 @@ Framework
 	-Added a file for random assorted functions to go into (Misc.js)
 	-Created a way for upgrade buttons to run custom functions, as well as keep their functionality. This opens the path for easier implementation of events and mechanics.
 	-Added some dummy variables for later mechanics
+	-Added the Round() function. Allows for more control over rounding to certain places
 
 Health System
 	-Added a way to absorb mana for more HP
@@ -15,12 +16,19 @@ Endgame
 	-Soft HP cap is 1 Mil (1,000,000)
 	-Added a capper to stop inf values w/ scaler
 	-Dev button removes cap and allows inf HP
+	-Tweaked values to make HP regen and gain satisfying
 
 
 Narritive
 	-Changed the name again, it's now Sans Original Thought.
 	-Sightly edited origional log
 	-Added accompanying logs for added upgrades and HP events
+	-Brainstormed a little about world/story
+	-Created an ID fed way of retreiving long strings for the console
+
+GIT
+	-Created a GIT repository
+	-Started to populate milstone and issue lists
 
 
 [16/1/17]
