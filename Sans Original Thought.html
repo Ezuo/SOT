@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+
+<title>Sans Original Thought</title>
+
+<script>
+
+function loadLib(){
+	var libs = ["Core.js", "Flags.js", "Narrative.js", "Misc.js"]//, "Combat.js", "Dialogue.js", "", "", ""]
+	for(a=0;a<libs.length;a++){
+		var head = document.getElementsByTagName('head')[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = libs[a];
+		head.appendChild(script);
+	}
+}
+
+</script>
+
+</head>
+<body onload="loadLib()" style="padding: 0 1vh 0 1vh;">
+<div id="statusBar" style="width:100%; border-bottom:thin solid black;margin:;padding:2vh 0 0 0;"></div>
+<div id="logBox" style="float:right;width:33%;margin:;padding:1vh 0 0 1vh;border-left:thin solid black;height:94vh;">
+<p id="log0">You wake up in the middle of Nowhere, weak and close to death.
+You have a familiar looking box next to you. It looks damaged, and upon further inspection the lid is warped shut.
+Some mana droplets slowly drip out of a crack on the side. </p>
+</div>
+
+<div id="upgButtons" style="padding:1% 0 0 0;"></div><br>
+<div id="dev"><button onclick="test1()">Mana++</button><button onclick="test2()">Remove My Limits</button><button onclick="clearInterval(tick)">Clear Interval</button></div> <!-- Stops the tick, in case of console spam -->
+
+
+
+
+</body>
+</html>

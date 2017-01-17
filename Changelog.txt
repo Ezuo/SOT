@@ -1,0 +1,70 @@
+[17/1/17]
+Framework
+	-Added a file for random assorted functions to go into (Misc.js)
+	-Created a way for upgrade buttons to run custom functions, as well as keep their functionality. This opens the path for easier implementation of events and mechanics.
+	-Added some dummy variables for later mechanics
+
+Health System
+	-Added a way to absorb mana for more HP
+	-Added a way to unlock HP system
+	-Tweaked HP gain formula for a while
+	-Higher amounts of mana absorbed scale up HP gain 
+
+Endgame
+	-Max mana absorbed is 1 Hundred Mil (100,000,000)
+	-Soft HP cap is 1 Mil (1,000,000)
+	-Added a capper to stop inf values w/ scaler
+	-Dev button removes cap and allows inf HP
+
+
+Narritive
+	-Changed the name again, it's now Sans Original Thought.
+	-Sightly edited origional log
+	-Added accompanying logs for added upgrades and HP events
+
+
+[16/1/17]
+Heavily refined upgrade system
+	-Integrated PROPER universal looping and checks
+	-Added appendChild functionality
+	-Code is generally a lot cleaner and smarter than before
+
+Added to Narritive Skeleton
+	-Created file for dialogue and narritive storage (Narrative.js)
+	-Created implementation for narritive updates
+
+Started work on Refining updateStatus function
+	-Null (not used yet) values not added to status bar
+	-Implemented dynamic looping
+	-Tweaked Formatting
+
+Added HP Skeleton
+	-HP, Max HP and HP Regen are all defined
+	-Regen Implemented in fTick
+	-fTick renamed to iTick, cTick added (Idle tick, Combat tick)
+	-Added a tweak where HP will default to Max HP if it goes over
+
+Touched up minor things
+	-Deleted junk/obselete code
+	-Added comments
+	-CSS tweaks
+	-Refined Dev alerts
+	-Added a Proper Name (Mana Quest)
+
+
+[13/1/17]
+Added Basic Functionality
+	-HTML Framework
+	-JS Load Library function
+	-Created Core and Flags files
+	-Added a tick every second, and tick function
+	-Dev Testing functions added
+
+Started work on Upgrades
+	-Researched and implemented JS objects to hold data
+	-Created basic button creation and upgrades
+	-Implemented basic dynamic looping and checks
+
+Added Narritive Skeleton
+	-First log message
+	-CSS addition and tweaking
