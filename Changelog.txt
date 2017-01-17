@@ -1,3 +1,5 @@
+Changelog testing git shit
+
 [17/1/17]
 Framework
 	-Added a file for random assorted functions to go into (Misc.js)
