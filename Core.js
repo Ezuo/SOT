@@ -7,7 +7,7 @@ manaAbs = 0;
 mHP = null;
 hP = null;
 hpRegen = 0.1;
-hpRegenSpeed = 0.01
+hpRegenSpeed = 0.01;
 maxLevel = false;
 infStop = true;
 
@@ -45,7 +45,7 @@ function updateStatus(){ //Updates the frontend that the user sees. Mana, MPS, H
 	document.getElementById("statusBar").innerHTML = buffer;
 }
 
-function upgrade(type, cost, num, bID, func){ //Upgrade funcion uses values in the buttons to add stuff to the player.
+function upgrade(type, cost, num, bID, func){ //Upgrade function uses values in the buttons to add stuff to the player.
 	if(mana >= cost){
 		window[type] += num
 		//alert(window[type]);
@@ -93,7 +93,7 @@ if(mHP==1){Narr(0);}
 	divmod = manaAbs/maxMana
 	console.log(divmod);
 	if(divmod!==1){
-		mHP = (1+999999*(divmod))/10*(1-(divmod));
+		mHP = (1+(999999*(divmod))/ /*  10*  */(1-(divmod)));
 	}
 	else{
 		if(infStop==true){
@@ -112,6 +112,28 @@ if(mHP==1){Narr(0);}
 	updateStatus();
 }
 
+
+function toggleCombat() {
+	if(tick != false){
+		clearInterval(tick);
+		tick = false;
+	}
+	else{
+		tick = setInterval(iTick, 1000);
+	}
+	toggleVisible("active")
+}
+
+function toggleVisible(type) {
+	$(".toggle").hide(500);
+	$("."+type).show(500);
+	$(".viewControl").removeAttr("disabled");
+	$("#"+type+"But").attr("disabled","disabled");
+}
+
+function refreshLog() {
+	$("#logBox").toggle(1);$("#logBox").toggle(1);
+}
 
 function test1(){ //Dev function. For testing.
 	mana+=10000000;

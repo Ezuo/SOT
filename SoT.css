@@ -1,0 +1,18 @@
+button:disabled {
+	color:lime;
+}
+
+#logBox {
+  background: -webkit-linear-gradient(#000, #FFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.logbox {
+	float:right;
+	width:33%;
+	margin:;
+	padding:1vh 0 0 1vh;
+	border-left:thin solid black;
+	height:94vh;
+}

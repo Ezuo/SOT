@@ -26,7 +26,7 @@ function checkFlags(obj) { //This function goes through all the flags, checking 
 				var upBut = document.createElement("button"); //Setting child
 				var upDiv = document.getElementById("upgButtons"); //Finding and setting parent
 				var bName = document.createTextNode(checkHold[4]+" ("+checkHold[0]+" Mana)"); //Using the stuff stored in checkHold to create values for the button dynamically
-				var bClick = "upgrade("+checkHold[3]+","+checkHold[0]+","+checkHold[2]+","+checkHold[5]+","+checkHold[6]+")"
+				var bClick = "upgrade("+checkHold[3]+","+checkHold[0]+","+checkHold[2]+","+checkHold[5]+","+checkHold[6]+"); refreshLog();"
 				var bID = checkHold[5]	
 				var bValues = ["upgr"+bID, bClick]
 				var bAttributes = ["id", "onclick"]

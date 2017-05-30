@@ -3,7 +3,8 @@
 <head>
 
 <title>Sans Original Thought</title>
-
+<link rel="stylesheet" href="SoT.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script>
 
 function loadLib(){
@@ -22,14 +23,23 @@ function loadLib(){
 </head>
 <body onload="loadLib()" style="padding: 0 1vh 0 1vh;">
 <div id="statusBar" style="width:100%; border-bottom:thin solid black;margin:;padding:2vh 0 0 0;"></div>
-<div id="logBox" style="float:right;width:33%;margin:;padding:1vh 0 0 1vh;border-left:thin solid black;height:94vh;">
+<div id="logBox" class="passive logbox toggle">
 <p id="log0">You wake up in the middle of Nowhere, weak and close to death.
 You have a familiar looking box next to you. It looks damaged, and upon further inspection the lid is warped shut.
 Some mana droplets slowly drip out of a crack on the side. </p>
 </div>
+<div id="logBox" class="active logbox toggle" hidden>You ready yourself for battle!</div>
 
-<div id="upgButtons" style="padding:1% 0 0 0;"></div><br>
-<div id="dev"><button onclick="test1()">Mana++</button><button onclick="test2()">Remove My Limits</button><button onclick="clearInterval(tick)">Clear Interval</button></div> <!-- Stops the tick, in case of console spam -->
+
+<div id="upgButtons" class="passive toggle" style="padding:1% 0 1% 0;"></div>
+<div id="testHide" class="active toggle" style="padding:1% 0 1% 0;" hidden>SUPER SECRET COMBAT DIV!!1!!11!!!1!</div>
+<div id="dev">
+	<button onclick="test1()">Mana++</button>
+	<button onclick="test2()">Remove My Limits</button>
+	<button onclick="clearInterval(tick)">Clear Interval</button> <!-- Stops the tick, in case of console spam -->
+	<button id="passiveBut" class="viewControl" onclick='toggleVisible("passive")' disabled>See Passive</button>
+	<button id="activeBut" class="viewControl" onclick='toggleVisible("active")'>See Active</button>
+</div> 
 
 
 
